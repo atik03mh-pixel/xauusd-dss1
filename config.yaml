@@ -1,0 +1,23 @@
+
+project:
+  name: "Gold Analysis AI Assistant"
+  version: "0.1.0"
+
+data:
+  symbol: "XAUUSD"
+  timeframes: ["M5", "M15", "M30", "H1", "H4", "D1"]
+  source: "yfinance"   # পরে MT5/TwelveData দিয়ে বদলানো যাবে
+  lookback_days: 60
+
+risk:
+  max_risk_per_trade_percent: 2
+  max_daily_loss_percent: 5
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  logs: "logs"
+
+telegram:
+  bot_token: ""
+  authorized_users: []
